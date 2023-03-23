@@ -7,3 +7,12 @@ const hero = {
       console.log(`${this.heroName}: ${message.toUpperCase()}`);
     }
   };
+
+  function say(message, isLouder) {
+    let sayFn = isLouder ? hero.sayLouder : hero.sayNormal;
+    sayFn = sayFn.bind(hero);
+  
+    sayFn("Привет");
+  }
+  
+  say("Привет!", false); 
