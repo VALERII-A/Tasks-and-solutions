@@ -23,3 +23,4 @@ break;
 } else {
 y.push(+x[i]);
 } } console.log(y)
+
