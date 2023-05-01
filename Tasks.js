@@ -17,3 +17,6 @@ function divisibleBy (numbers, divisor) {
 function twiceAsOld(dadYearsOld, sonYearsOld) {
     return  Math.abs(dadYearsOld - (sonYearsOld * 2)) 
     }
+
+// 3 //
+// Если задано число n, вернуть количество положительных нечетных чисел меньше n 
