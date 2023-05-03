@@ -22,3 +22,8 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 // Если задано число n, вернуть количество положительных нечетных чисел меньше n 
 //  Решение:
 const oddCount = n => (n%2 !== 0 ? (n - 1) / 2 : n/2 )
+
+// 4 //
+// Преобразуйте строку в число 
+//  Решение:
+const stringToNumber = str => (+str)
