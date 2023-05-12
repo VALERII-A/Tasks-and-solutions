@@ -1,1 +1,1 @@
-Tasks and solutions
+Tasks and solutions JS,TS
