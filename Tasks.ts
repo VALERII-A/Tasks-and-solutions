@@ -28,3 +28,10 @@ function repeatM(text: string, count: number) {
 //  Количество звездочек регулируется вторым необязательным параметром. Значение по умолчанию — 4.
 // Пример:
 //  getHiddenCard('1234567812345678', 2) // "**5678"
+// Решение:
+function getHiddenCard(numders: string, stars:number = 4) {
+  const lastNumbers = numders.slice(-4)
+  const starSum = '*'.repeat(stars)
+  const res = starSum + lastNumbers
+return res
+}
