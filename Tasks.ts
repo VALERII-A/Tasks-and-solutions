@@ -35,3 +35,10 @@ function getHiddenCard(numders: string, stars:number = 4) {
   const res = starSum + lastNumbers
 return res
 }
+
+
+// 3 //
+// Напишите функцию, которая возвращает массив четных чисел из массива numbers.
+// Пример:
+//  const numbers = [1, 3, 8, 9, 100, 23, 55, 34];
+// Решение:
