@@ -54,4 +54,9 @@ const getEvenNumbers = ()=> numbers.filter((e)=>e % 2 == 0)
 // Реализуйте и экспортируйте по умолчанию функцию, которая находит все анаграммы слова.
 // Функция принимает исходное слово и список для проверки — массив. 
 // А возвращает функция массив всех анаграмм. Если в списке нет анаграммы, то возвращается пустой массив
+//  Решение:
+function filterAnagrams(word: string, array: string[]): string[] {
+  const anagram = word.split('').sort().join();
+  return array.filter( (i) => i.split('').sort().join() === anagram) 
+}
      
