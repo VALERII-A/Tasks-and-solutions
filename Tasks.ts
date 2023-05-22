@@ -60,3 +60,13 @@ function filterAnagrams(word: string, array: string[]): string[] {
   return array.filter( (i) => i.split('').sort().join() === anagram) 
 }
      
+
+// 5 //
+// Реализуйте функцию isComplete(), которая принимает на вход курс и определяет, завершен ли он. 
+// Завершенным считается курс, в который добавлено четыре или более уроков:
+// Пример:
+// const course = {
+//   name: 'Java',
+//   lessons: ['variables', 'functions', 'conditions'],
+// };
+// isComplete(course); false
