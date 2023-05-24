@@ -74,3 +74,14 @@ function filterAnagrams(word: string, array: string[]): string[] {
 function isComplete(course: { name: string, lessons: string[] }): boolean {
   return course.lessons.length >= 4;
 }
+
+
+// 6 //
+// Реализуйте перечисление ModalStatus с двумя значениями: Opened и Closed
+// Реализуйте функцию buildModal(). Он возвращает объект, который описывает модальное окно. Параметры функции:
+// Текст, который должен быть внутри окна после инициализации
+// Статус, с которым надо создать объект окна
+// Функция возвращает объект с двумя полями: text (здесь хранится переданный текст) и status (здесь хранится переданный статус)
+//  Пример:
+// const modal = buildModal('hexlet forever', ModalStatus.Opened);
+// { text: 'hexlet forever', status: ModalStatus.Opened }
