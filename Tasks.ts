@@ -85,3 +85,11 @@ function isComplete(course: { name: string, lessons: string[] }): boolean {
 //  Пример:
 // const modal = buildModal('hexlet forever', ModalStatus.Opened);
 // { text: 'hexlet forever', status: ModalStatus.Opened }
+//  Решение:
+enum ModalStatus {
+  Opened, Closed
+}
+
+const buildModal = (text: string, status: ModalStatus): { text: string; status: ModalStatus } => {
+  return {text, status} 
+}
