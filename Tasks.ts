@@ -93,3 +93,8 @@ enum ModalStatus {
 const buildModal = (text: string, status: ModalStatus): { text: string; status: ModalStatus } => {
   return {text, status} 
 }
+
+
+// 7 //
+// Реализуйте функцию getOlderUser(), которая принимает на вход двух пользователей и возвращает того, который старше. 
+// Если пользователи являются ровесниками, то возвращается null:
