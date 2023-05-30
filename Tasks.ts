@@ -119,6 +119,18 @@ function getOlderUser(user1: User, user2: User): User | null {
 // Реализуйте функцию getParams(), которая принимает на вход строку запроса (query string) и возвращает параметры в виде объекта:
 //  Пример:
 // getParams('per=10&page=5');
-// // { per: '10', page: '5' }
+//  { per: '10', page: '5' }
 // getParams('name=hexlet&count=3&order=asc');
-// // { name: 'hexlet', count: '3', order: 'asc' }
+//  { name: 'hexlet', count: '3', order: 'asc' }
+// Решение:
+function getParams(string:string) {
+  const parts = string.split('&')
+   const init: any = {}
+   const result = parts.reduce((acc,part) => {
+     const [key,value] = part.split('=')
+     acc [key] = value
+     return acc
+   },init)
+   return result
+ }
+ 
