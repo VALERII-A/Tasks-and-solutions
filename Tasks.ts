@@ -144,3 +144,8 @@ function getParams(string:string) {
 // Company.isEmployeeEmail('user@example.com', 'hexlet.io');
 // false
 //  Решение:
+namespace Company {
+  export function isEmployeeEmail(email: string, domain:string):boolean {
+   return email.endsWith(`@${domain}`)
+  }
+}
