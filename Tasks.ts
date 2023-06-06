@@ -182,3 +182,9 @@ function filter(numbers: number[], callback: (n: number) => boolean): number[] {
 // Анонимная функция, которая принимает на вход число и возвращает число. У этой функции есть необязательный параметр — индекс элемента в массиве
 // map([8, 9], (n, index) => index + n);
 // // [8, 10]
+//  Решение:
+function map(numbers: number[], callback: (n: number, index: number) => number):number[] {
+  const result: number[] = []
+  numbers.forEach((n, index) => result.push(callback(n, index)))
+  return result
+}
