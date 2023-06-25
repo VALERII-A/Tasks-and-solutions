@@ -207,3 +207,7 @@ function map(numbers: number[], callback: (n: number, index: number) => number):
 // forEach([8, 9], (n, index) => console.log(index + n));
 // // 8
 // // 10
+//  Решение:
+function forEach (numders:number[], callback: (n:number, index: number) => void): void {
+  numders.forEach((n, index) => callback(n,index))
+}
