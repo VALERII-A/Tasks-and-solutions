@@ -43,3 +43,15 @@ function order(words) {
 //  Определить сколько раз каждый элемент встречается в массиве.
 //  Пример:
 //  const fruits = ['kiwi', 'apple', 'kiwi', 'orange', 'kiwi', 'apple'];
+// Решение:
+function numberOfFruits(arr) {
+  let buffer = {};
+  arr.forEach((i) => {
+    if (!buffer[i]) {
+      buffer[i] = 1;
+    } else {
+      buffer[i]++;
+    }
+  });
+  console.log(buffer);
+}
