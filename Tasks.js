@@ -55,3 +55,8 @@ function numberOfFruits(arr) {
   });
   console.log(buffer);
 }
+// 6.1 //
+//  Создать массив который содержит только уникальные значения исходного массива.
+//  Пример:
+//  const fruits = ['kiwi', 'apple', 'kiwi', 'orange', 'kiwi', 'apple'];
+// Решение:
