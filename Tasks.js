@@ -60,3 +60,11 @@ function numberOfFruits(arr) {
 //  Пример:
 //  const fruits = ['kiwi', 'apple', 'kiwi', 'orange', 'kiwi', 'apple'];
 // Решение:
+const unique = (arr) => {
+  const buffer = [];
+  arr.map((i) => {
+    if (!buffer.includes(i)) {
+      buffer.push(i);
+    }
+  });
+};
