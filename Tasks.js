@@ -77,3 +77,14 @@ const unique = (arr) => {
 //   { name: 'masha', age: 20 },
 //   { name: 'stas', age: 18 },];
 // Решение:
+const grouped = (arr) => {
+  const obj = {};
+  arr.forEach((i) => {
+    if (!obj[i.age]) {
+      obj[i.age] = [i];
+    } else {
+      obj[i.age].push(i);
+    }
+  });
+  return obj;
+};
