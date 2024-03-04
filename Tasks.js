@@ -112,3 +112,12 @@ const grouped = (arr) => {
 //   return null;
 // }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// 9 //
+// Получить единый массив из любимых пицц каждого друга
+// Имеется исходный массив friends:
+// const friends = [
+//   { name: 'alex', pizzas: ['cheese', 'pepperoni'] },
+//   { name: 'mike', pizzas: ['salami', 'margarita'] },
+//   { name: 'stas', pizzas: ['meat'] },
+//   { name: 'anna', pizzas: ['fish'] }];
